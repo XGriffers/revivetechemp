@@ -1,0 +1,124 @@
+/*======================================================
+                            Navbar
+    ======================================================*/
+.navbar {
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    width: 100%;
+    z-index: 10;
+
+}
+
+.nav-wrapper {
+    margin-top: 1px;
+    text-align: center;
+    width: 60%;
+}
+
+.nav-logo {
+
+    height: 80px
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    list-style: none;
+    justify-content: right;
+    text-align: center;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: rgb(13, 26, 38);
+    display: flex;
+    flex-direction: row;
+    font-size: 10pt;
+    height: 20px;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+
+}
+
+.navbar li a:hover {
+    /* border-bottom: 1px solid rgb(28, 121, 184); */
+    color: #CBB26A;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+/* Animated Bottom Line */
+.navbar li a:before,
+.navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background: #CBB26A;
+}
+
+.navbar li a:before {
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar li a:after {
+    background: #CBB26A;
+    right: 0;
+    /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+
+.navbar li a {
+    color: #fff;
+}
+
+.navbar li a:hover:before {
+    background: #CBB26A;
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+.navbar li a:hover:after {
+    background: transparent;
+    width: 100%;
+    /* transition: 0s; */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav-wrapper {
+        width: 100%;
+
+    }
+
+    .navbar {
+        background: #333;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        height: 125px;
+
+        width: 100%;
+        z-index: 10;
+
+    }
+
+}

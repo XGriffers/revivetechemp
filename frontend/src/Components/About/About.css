@@ -1,0 +1,35 @@
+/* Homepage */
+
+#aboutPage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    height: 100vh;
+
+
+}
+
+#aboutPage .content {
+    max-width: 800px;
+    text-align: left;
+    margin-left: 25px;
+    color: #fff;
+
+}
+
+
+#aboutPage p {
+    font-size: 14pt;
+    line-height: 1.5;
+}
+
+.image img {
+    width: 550px;
+    margin-right: 50px;
+    float: right;
+}
+
+.center {
+    width: 500px;
+}

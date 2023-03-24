@@ -1,0 +1,123 @@
+.contact-form {
+    max-width: 450px;
+    margin-top: 280px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 25px;
+    background-color: #333;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+
+}
+
+
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+    margin-right: 25px;
+
+}
+
+.input-group input {
+    color: #fff;
+}
+
+.input-group textarea {
+    color: #fff;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #b7a05d;
+    border-radius: 3px;
+
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #0070ba;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.sr-only {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    color: #fff;
+    background-color: #CBB26A;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: background-color 0.15s ease-in-out;
+    background: linear-gradient(to right, #CBB26A, #b7a05d);
+    background-size: 200% auto;
+}
+
+.btn:hover,
+.btn:focus {
+    animation: gradient 0.5s ease-in-out forwards;
+}
+
+@keyframes gradient {
+    to {
+        background-position: right center;
+    }
+}
+
+.btn:active {
+    background-color: #b7a05d;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-form {
+        max-width: 600px;
+        margin: 220px auto;
+        padding: 25px 40px;
+    }
+
+    .input-group {
+        margin-right: 25px;
+        margin-bottom: 0;
+
+    }
+
+    .forgot-password-link,
+    .signup-link {
+        margin-top: 0;
+        margin-left: 25px;
+    }
+}
