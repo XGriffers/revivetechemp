@@ -22,7 +22,7 @@ const Contact = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form onSubmit={handleSubmit} className="contact-form" netlify>
             <div className="input-group">
                 <label htmlFor="name" className="sr-only">Name:</label>
                 <input
